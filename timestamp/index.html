@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<title>Timestamp</title>
+	</head>
+	<body>
+		<div class="container">
+			<h1>Timestamp</h1>
+			<h3>
+				Current timestamp is :
+				<small class="text-muted" id="current-timestamp"></small>
+				<button type="button" class="btn btn-primary" onclick="addLap()">save</button>
+			</h3>
+			<div id="timestamp-list" class="list-group mb-2">
+			</div>
+			<div class="form-group">
+			    <textarea placeholder="Labels (separate with ; or breakline)" class="form-control" id="labels" rows="3" onChange="updateLabels()"></textarea>
+			</div>
+			<div><button type="button" class="btn btn-success" onclick="exportLaps()">Export</button></div>
+			<i>Time is based on <a href="api.php" target="_blank">the server time</a>. Diff with local is <span id="diff-timestamp"></span> ms.</i>
+		</div>
+		<script src="script.js?v=7"></script>
+	</body>
+</html>

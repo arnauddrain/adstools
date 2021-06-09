@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+			<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<title>Dexterity Interpretator</title>
+	</head>
+	<body>
+		<div class="container">
+			<h1>Dexterity reader v2</h1>
+			<div>
+				<input type="file" id="file-input" onchange="readFile(event)"/>
+				Ratio : <input id="ratio" value="2" style="width:50px" onchange="draw()">
+				<input value="animate" onclick="animateLevels()" id="animate" type="button" disabled class="btn btn-success">
+			</div>
+			<div>
+				<span style="color:red">Red : </span>Begin <span style="color:blue">Blue : </span>End
+			</div>
+			<div id="result"></div>
+		</div>
+		<script src="script.js?v=1"></script>
+	</body>
+</html>
